@@ -1,0 +1,52 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .container{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 1000;
+    width: 60vw;
+    height: 70vh;
+    /* background-color: rgb(150, 198, 241); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+ }
+
+ .container #button{
+    width: 80%;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(4, 114, 210);
+    font-size: 30px;
+    color: white;
+
+ }  
+  
+ 
+ @media screen and (min-width:360px) and (max-width:768px) {
+   .container{
+      width: 90%;
+      height: 90%;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       margin: 0;
+   }
+   .container #button{
+      font-size: 20px;
+      
+   }
+
+ }
+ 
